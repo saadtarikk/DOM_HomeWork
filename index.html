@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/main.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <style>
+        .checked {
+          color: orange;
+        }
+    </style>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Game Repo</h1>
+      </header>
+    <div id = "container">
+        <form id="new-item-form">
+            <div id="form-item">
+                <label for="title" class="primary">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div id="form-item">
+                <label for="genre" class="primary">Genre</label>
+                <select id="genre">
+                    <option value="" disabled selected></option>
+                    <option value="Arcade">Arcade</option>
+                    <option value="Action">Action</option>
+                    <option value="Strategy">Strategy</option>
+                    <option value="Fps">FPS</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Battle Royale">Battle Royale</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="form-item">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+    
+            <input type="submit" name="button"id="submit-btn" value="save">
+        </form>
+    </div>
+        <button id="delete-all" >Delete All</button>
+
+        <h1>Game List</h1>
+        <ul id="games-list"></ul>
+
+
+    </div>
+
+</body>
+</html>
