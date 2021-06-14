@@ -39,22 +39,3 @@ const handleDeleteAllClick = function (event) {
     gamesList.innerHTML = '';
 }
 
-// const handleNoteInput = function(note) {
-//     const noteListItem = CreateNoteListItem(note.target)
-//     const noteList = document.querySelector('#note-editor-input')
-//     noteList.appendChild(noteListItem)
-// }
-
-// const CreateNoteListItem = function(note) {
-//     const noteListItem = document.createElement('div')
-//     noteListItem.classList.add('note-list-item')
-
-//     const newNote = document.createElement('p')
-//     newNote.textContent = note.newNote.value
-//     noteListItem.appendChild(newNote)
-
-
-//     return noteListItem
-
-
-    // return noteListItem
